@@ -3,7 +3,7 @@
   "description": "App to display cli run results",
   "dependencies": {
     "cross-spawn": "6.0.5",
-    "salesforcedx-templates": "^47.17.0",
+    "salesforcedx-templates": "47.17.0",
     "shelljs": "0.8.3"
   },
   "version": "1.0.0",
