@@ -1,0 +1,16 @@
+{
+  "name": "perf-runner",
+  "description": "App to display cli run results",
+  "dependencies": {
+    "cross-spawn": "6.0.5",
+    "salesforcedx-templates": "^47.17.0",
+    "shelljs": "0.8.3"
+  },
+  "version": "1.0.0",
+  "keywords": [
+    "salesforce",
+    "perf"
+  ],
+  "author": "Luis Campos",
+  "license": "MIT"
+}
