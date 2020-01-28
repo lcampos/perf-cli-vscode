@@ -14,19 +14,19 @@ printMsg() {
 #setup dir where all test data gets created
 mkdir "./tests"
 
-printMsg " Run simple NodeJS hello world ..."
+printMsg " Run Node process (hello world) ..."
 time node app-hello-world.js
 
-printMsg " Run cli command by directly calling the cli ..."
+printMsg " Run CLI command directly ..."
 time sfdx force:apex:class:create -n "testOneTwo" --template "DefaultApexClass" --outputdir "./tests"
 
-printMsg " Run cli command using node child process (vscode approach)..."
+printMsg " Run CLI command via node child process (vscode approach) ..."
 time node cli_node_child_process.js
 
-printMsg " Run cli command by calling the ocliff plugin directly from node ..."
+printMsg " Run command by programmatically calling the ocliff plugin ..."
 time node templates-module.js
 
-printMsg " Run native code instead of having it executed by oclif ..."
+printMsg " Run code without oclif ..."
 time node local-generator.js
 
 #remove setup dir
